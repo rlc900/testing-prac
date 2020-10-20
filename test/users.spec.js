@@ -29,3 +29,18 @@ describe('The findUserByEmail function', () => {
       })
     })
 })
+
+describe('The findUserById function', () => {
+  it ('should find a user by id', async () => {
+    const response = await findUserById(1)
+
+    assert.strictEqual(response.message, 'User found successfully.')
+  })
+  it ('rejects with error if user id is not found', () => {
+    return findUserById(90).then(() => {
+      assert.fail('Expected findUserById function to throw.')
+    }, error => {
+        assert.strictEqual(error.message, 'User with id: 90 was not found.')
+    })
+  })
+})
