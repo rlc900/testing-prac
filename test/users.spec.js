@@ -20,4 +20,12 @@ describe('The findUserByEmail function', () => {
 
           assert.strictEqual(response.message, 'User found successfully.')
     })
+
+    it ('rejects with error if user with email is not found', () => {
+      return findUserByEmail('x@y.com').then(() => {
+        assert.fail('Expected findUserByEmail function to reject')
+      }, error => {
+          assert.strictEqual(error.message, 'User with email: x@y.com was not found.')
+      })
+    })
 })
