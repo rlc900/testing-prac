@@ -1,5 +1,5 @@
 const add = require('../add')
-const assert = require('assert')
+// const assert = require('assert')
 
 // const result = add(1,3)
 // const expected = 4;
@@ -21,8 +21,7 @@ describe('The add fucntion', () => {
         const result = add(1, 3)
         const expected = 4
 
-        assert.strictEqual(result, expected)
-
+        expect(result).toBe(expected)
     })
 })
 

@@ -4,13 +4,13 @@
   "description": "",
   "main": "add.js",
   "scripts": {
-    "test": "nyc mocha"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^24.7.0",
+    "jest": "^24.9.0",
     "mocha": "^6.2.3",
     "nyc": "^13.3.0"
   },
