@@ -4,14 +4,25 @@
   "description": "",
   "main": "add.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jest": "^24.7.0",
-    "mocha": "^6.0.2",
+    "mocha": "^6.2.3",
     "nyc": "^13.3.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlc900/testing-prac.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rlc900/testing-prac/issues"
+  },
+  "homepage": "https://github.com/rlc900/testing-prac#readme"
 }
